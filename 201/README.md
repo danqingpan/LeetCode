@@ -1,5 +1,5 @@
 # Priciple:
-The problem tests how to implement topological sorting method. To solve such a problem, we need:  
+This problem tests how to implement topological sorting method. To solve this problem, we need:  
 a. a data structure that holds nodes with zero inlets
 b. a data structure that counts the inlet for all nodes
 c. a node viewing method (bfs, dfs)
