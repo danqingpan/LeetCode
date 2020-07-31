@@ -1,5 +1,5 @@
 # Priciple:
-The problem tests how to implement topological sort method.
+The problem tests how to implement topological sorting method.
 
 ## Solving steps:
 1. Find courses with zero inlets. This is where we start.
