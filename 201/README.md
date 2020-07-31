@@ -1,5 +1,8 @@
 # Priciple:
-The problem tests how to implement topological sorting method.
+The problem tests how to implement topological sorting method. To solve such a problem, we need:  
+a. a data structure that holds nodes with zero inlets
+b. a data structure that counts the inlet for all nodes
+c. a node viewing method (bfs, dfs)
 
 ## Solving steps:
 1. Find courses with zero inlets. This is where we start.
