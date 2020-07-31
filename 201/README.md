@@ -11,3 +11,7 @@ c. a node viewing method (bfs, dfs)
 4. Pop a course from the queue and add it to result.
 5. Check adjacent courses. If an adjacent course has zero inlet, push it into zero inlet queue. Else reduce its inlet count.
 6. Run until the queue has no entities.
+
+## Conclusion:
+a. it is proposed to use a dictionary to save the dependencies
+b. another dictionary should be used to count inlets
