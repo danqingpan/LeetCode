@@ -19,4 +19,3 @@ class Solution:
             mono_stack.append(num[i])
         
         return str(int(''.join(mono_stack)))[:len(mono_stack)-k+c]
-        -k+c]
