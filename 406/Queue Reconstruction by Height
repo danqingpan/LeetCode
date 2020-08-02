@@ -1,0 +1,10 @@
+# Principle
+The way to solve this problem rely on the fact that we can always adjust the smallest element in a queue without disturbing other elements.  
+So we sort the list to make larger elements in the front and we adjust smallest elements to the correct position every time.
+
+## Solving Steps:
+1. Sort by the height to let higher value in the front. If the height is same, then let smaller second value in the front. This is natural.
+2. Adjust the position of the smallest height, insert it to the correct position
+
+## Conclusion:
+This problem is a little bit tricky.
