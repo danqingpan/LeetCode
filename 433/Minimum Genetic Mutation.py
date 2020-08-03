@@ -2,13 +2,14 @@ class Solution:
     def minMutation(self, start: str, end: str, bank: List[str]) -> int:
         
         b = set(bank)
-        result = []
+        self.min_len = 9
         
         def recur(start, end, count, seen):
             if count > 8:
                 return
             if start == end:
-                result.append(count)
+                if count < self.min_len:
+                    self.min_len = count
                 return
             for i in range(8):
                 for s in 'ACGT':
@@ -18,5 +19,4 @@ class Solution:
                         recur(new_s, end, count+1,seen)
         
         recur(start, end, 0, set([start]))
-        if result: return min(result)
-        else: return -1
+        return self.min_len if self.min_len < 9 else -1
