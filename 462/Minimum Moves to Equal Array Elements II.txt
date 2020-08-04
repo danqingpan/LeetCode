@@ -1,0 +1,13 @@
+class Solution:
+    def minMoves2(self, nums: List[int]) -> int:
+        
+        nums = sorted(nums)
+        
+        leveler = nums[len(nums)//2]
+        
+        steps = 0
+
+        for item in nums:
+            steps += abs(item-leveler)
+            
+        return steps
